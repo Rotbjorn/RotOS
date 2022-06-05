@@ -1,0 +1,4 @@
+/usr/local/i386elfgcc/bin/i386-elf-gcc
+-Isrc/drivers/include
+-Isrc/kernel/include
+-ffreestanding
