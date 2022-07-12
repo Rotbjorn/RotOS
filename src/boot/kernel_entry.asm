@@ -1,6 +1,6 @@
 [bits 32]
 [extern main]       ; defined in kernel.c
 
-call main
+call main   ; should be at address 0x1000
 
-jmp $
+jmp $       ; jump indefinitely after main() returns

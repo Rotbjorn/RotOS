@@ -58,8 +58,6 @@ switch_to_pm:
 %include "include/boot_messages.asm"
 %include "include/boot_gdt.asm"
 
-
-
 [bits 32]
 init_pm:
     mov ax, DATA_SEG
@@ -87,3 +85,4 @@ MSG_LOAD_KERNEL: db "[BOOT] Loading kernel...",0
 times 510-($-$$) db 0
 dw 0xAA55
 ; sector 1 ends here
+
